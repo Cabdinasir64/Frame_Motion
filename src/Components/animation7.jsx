@@ -13,8 +13,6 @@ const Animation7 = () => {
             },
         },
     };
-
-
     const childVariants1 = {
         initial: { opacity: 0, y: 50 },
         animate: { opacity: 1, y: 0 },
@@ -43,7 +41,7 @@ const Animation7 = () => {
         <div className="flex justify-center items-center min-h-screen">
             <motion.div
                 className="space-y-4"
-                variants={parentVariants}  // Parent variant for sequencing children
+                variants={parentVariants} 
                 initial="initial"
                 animate="animate"
             >
