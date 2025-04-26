@@ -4,11 +4,12 @@ import Dropdown from './Components/dropdown'
 import Animation1 from './Components/animation1'
 import Animation2 from './Components/animation2'
 import Animation3 from './Components/animation3'
+import Animation4 from './Components/animation4'
 function App() {
 
   return (
     <>
-      <Animation3 />
+      <Animation4 />
 
     </>
   )
