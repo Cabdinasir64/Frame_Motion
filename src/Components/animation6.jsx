@@ -19,8 +19,8 @@ const Animation6 = () => {
                 }}
                 transition={{
                     type: "spring",
-                    stiffness: 100,
-                    damping: 10,
+                    stiffness: 10,
+                    damping: 100,
                     duration: 3,
                     repeat: Infinity,
                     repeatType: "loop",
