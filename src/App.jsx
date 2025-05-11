@@ -1,9 +1,9 @@
-import Animation21 from './Components/animation21'
+import Animation22 from './Components/animation22'
 function App() {
 
   return (
     <>
-      <Animation21 />
+      <Animation22 />
 
     </>
   )
