@@ -21,7 +21,7 @@ function App() {
                   type: "spring",
                   stiffness: 100,
                   damping: 30,
-                  duration: 0.6,
+                  duration: 0.5,
                 }}
               >
                 <Home />
