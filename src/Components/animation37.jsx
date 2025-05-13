@@ -1,7 +1,4 @@
-// AnimatedCard.jsx
-import React, { useState } from "react";
 import { motion } from "framer-motion";
-
 export default function AnimatedCard({ setSelected }) {
   return (
     <motion.div
