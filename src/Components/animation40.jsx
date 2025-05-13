@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Home() {
+function About() {
     return (
         <>
             {/* Navbar */}
@@ -23,13 +23,13 @@ function Home() {
             </div>
 
             {/* Content */}
-            <div className="flex justify-center items-center min-h-screen bg-purple-400 pt-20">
-                <h1 className="text-3xl text-center text-white font-semibold">
-                    Welcome to the Home Page!
+            <div className="flex justify-center items-center min-h-screen bg-yellow-400 pt-20 overflow-x-hidden">
+                <h1 className="text-3xl text-center text-blue-800 font-semibold">
+                    This is the About Page
                 </h1>
             </div>
         </>
     );
 }
 
-export default Home;
+export default About;
