@@ -8,21 +8,25 @@ export default function AnimatedTabs() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100">
-      <div className="flex space-x-4 bg-white rounded-xl p-2 shadow-lg">
+      <div className="flex space-x-2 bg-white rounded-xl p-2 shadow-lg relative">
         {tabs.map((tab) => (
-          <button
+          <motion.button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className="relative px-4 py-2 text-sm font-medium text-gray-700"
+            className="relative px-4 py-2 text-sm font-medium z-10"
+            style={{
+              color: activeTab === tab ? "white" : "#1f2937", 
+            }}
           >
-            {tab}
             {activeTab === tab && (
               <motion.div
-                layoutId="underline"
-                className="absolute left-0 right-0 bottom-0 h-1 bg-blue-500 rounded"
+                layoutId="activeBackground"
+                className="absolute inset-0 bg-blue-500 rounded-lg z-[-1]"
+                transition={{ type: "spring", stiffness: 500, damping: 30 }}
               />
             )}
-          </button>
+            {tab}
+          </motion.button>
         ))}
       </div>
 
